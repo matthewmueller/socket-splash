@@ -1,0 +1,19 @@
+{
+  "name": "socket-splash",
+  "repo": "matthewmueller/socket-splash",
+  "description": "splash screen for device connection",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/overlay" : "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "socket-splash.css"
+  ]
+}
