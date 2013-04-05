@@ -1,0 +1,22 @@
+.splash {
+  width: 600px;
+  height: 300px;
+  margin: 40px auto;
+  border: 2px solid gray;
+}
+
+.splash .device {
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  display: block;
+  width: 50%;
+  background: #DA3435;
+  height: 100%;
+  color: #eee;
+  border: 1px solid black;
+}
+
+.splash .device.ready {
+  background: #7FC682;
+}

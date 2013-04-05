@@ -1,0 +1,1 @@
+module.exports = '<div class="device">\n  <span class="title"></span>\n  <span class="url"></span>\n</div>\n';

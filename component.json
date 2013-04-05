@@ -5,13 +5,22 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/overlay" : "*"
+    "component/domify" : "*",
+    "component/user-agent-parser" : "*",
+    "matthewmueller/uid" : "*",
+    "matthewmueller/io" : "*",
+    "component/classes" : "*",
+    "component/querystring" : "*"
   },
-  "development": {},
+  "development": {
+  },
   "license": "MIT",
   "scripts": [
     "index.js",
-    "template.js"
+    "lib/qs.js",
+    "lib/device.js",
+    "templates/splash.js",
+    "templates/device.js"
   ],
   "styles": [
     "socket-splash.css"
