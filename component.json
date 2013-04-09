@@ -6,19 +6,18 @@
   "keywords": [],
   "dependencies": {
     "component/domify" : "*",
-    "component/user-agent-parser" : "*",
     "matthewmueller/uid" : "*",
-    "matthewmueller/io" : "*",
+    "matthewmueller/device" : "*",
     "component/classes" : "*",
-    "component/querystring" : "*"
+    "matthewmueller/ligature-symbols" : "*",
+    "component/simple-grid" : "*"
   },
   "development": {
+    "matthewmueller/device" : "*"
   },
   "license": "MIT",
   "scripts": [
     "index.js",
-    "lib/qs.js",
-    "lib/device.js",
     "templates/splash.js",
     "templates/device.js"
   ],
