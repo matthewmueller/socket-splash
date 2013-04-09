@@ -1,1 +1,1 @@
-module.exports = '<div class="device">\n  <span class="title"></span>\n  <span class="url"></span>\n</div>\n';
+module.exports = '<div class="device">\n  <div class="type lsf"></div>\n  <h2 class="title"></h2>\n</div>\n';

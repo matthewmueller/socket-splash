@@ -1,1 +1,1 @@
-module.exports = '<div class="splash"></div>\n';
+module.exports = '<div class="splash grid grid-pad">\n  <div class="intro col-1-1">\n    <h1 class="title"></h1>\n    <p class="desc"></p>\n  </div>\n  <div class="devices"></div>\n</div>\n';

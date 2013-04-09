@@ -2,23 +2,30 @@
 <head>
   <title>socket-splash component</title>
   <link rel="stylesheet" href="../build/build.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
+  <h2>Component</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque necessitatibus dolor at esse. Est, non inventore iure magnam aspernatur ad quasi optio provident doloremque. Optio, eveniet error maiores ducimus aliquam.</p>
+
   <script src="../build/build.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var IO = require('matthewmueller-io'),
-        Splash = require('socket-splash');
+    var device = require('matthewmueller-device')('http://ws.mat.io:80/splash-screen-testzzzzz'),
+        splash = require('socket-splash');
 
-    io = IO('http://ws.mat.io:80/splash-test?device=hi');
-    var splash = Splash(io);
+    var iphone = device('iphone', 'mobile');
+    var computer = device('computer', 'desktop');
+    var mac = device('mac', 'desktop');
 
-    splash
-      .device('desktop')
-      .device('mobile');
-
-    splash.ready(function(err) {
-      console.log('all ready!');
-    });
+    splash('Color Tilt')
+      .desc('Use your iPhone\'s accelerometer to control the color on your screen.')
+      .add(iphone)
+      .add(computer)
+      .add(mac)
+      .ready(function() {
+        computer.send(iphone, 'alert', 'hi');
+        iphone.on('alert', function(msg) { alert(msg); });
+      });
 
   </script>
 </body>
